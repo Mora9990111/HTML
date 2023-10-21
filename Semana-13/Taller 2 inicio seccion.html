@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOR INICIO SECION</title>
+    <!-- link de sitio Sweetalert mensajes más elegantes-->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+<body>
+    <center>
+        <img src="./img/3dc9c8dd-0926-4a75-bf6b-1f25784dfe1f.jpg" alt="" width="150" height="150">
+        <h1>CICLO FOR INICIO SECION</h1>
+        <h2>VALIDACION DE CONTRASEÑA USUARIO</h2>
+        <br>
+        <SCript>
+            var pasw2;
+            var sw=0; //apagada
+            var clave=123; // contraseña oficial de ingreso
+            for (f=1;f<=3;f++){
+                pasw2=parseInt(prompt("ingrese contraseña..."));
+                if (pasw2==clave){
+                    swal("apreciado usuario","ACCESO DENEGADO","success");
+                    sw=1; //activada
+                    break;
+                }
+            }
+            // salida
+            if (sw==0){
+                swal("apreciado usuario","ACCESO DENEGADO","error");
+                document.write("<font color='red' size=14>BLOCKED ACCESS</font>");
+            }else{
+                document.write("<font color='blue' size=14>BLOCKED ACCESS</font>");
+            }
+        </SCript>
+    </center>
+    
+</body>
+</html>

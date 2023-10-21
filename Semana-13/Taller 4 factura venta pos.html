@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FACTURA VENTAS POSt</title>
+</head>
+<body>
+    <center>
+        <h1>CICLO REPETITIVO WHILE PERSONALIZADO</h1>
+        <h2>FACTURA VENTAS</h2>
+        <br>
+        <script>
+            //VARIABRE ENTRADA
+            var nombrep;
+            var suma=0;
+            var subt=0;
+            var netop=0;
+            var desc=0;
+            var iva=0;
+            var num=1;
+            var opc=true;
+            nom_std=prompt("Ingrase nombre estudiante");
+            while (opc==true){
+                nombrep=prompt("INGRESE PRODUCTOS");
+                precio=parseFloat(prompt("INGRESE PRECIO DEL PRODUCTO"));
+                cant=parseFloat(prompt("INGRESE CANTIDAD A COMPRA"));
+                opc=confirm("DESEA CONTINUAR FACTURANDO ?[SI=ACEPTAR]")
+            }
+            //SALIDA
+            document.write("***********************");
+            document.write("<br>");
+            document.write("***"+"ALMACEN MERKACOSTA"+"***");
+            document.write("<br>");
+            document.write("***"+" SU FACTURA VENTAS POS"+"***");
+            document.write("<br>");
+            document.write("PRODUCTOS COMPRADOS:..."+(num-1)+"<br>"+"<br>");
+            document.write("SUBTOTAL"+"<br>"+"<br>");
+            document.write(suma.toFixed(0)+"<br>"+"<br>");
+            document.write("DESCUENTO"+"<br>"+"<br>");
+            document.write(desc.toFixed(0)+"<br>"+"<br>");
+            document.write("IVA"+"<br>"+"<br>");
+            document.write(iva.toFixed(0)+"<br>"+"<br>");
+            document.write("NETO PAGO"+"<br>"+"<br>");
+            document.write(netop.toFixed(0)+"<br>"+"<br>");
+            document.write("***"+"ATENDIDO POR:..."+nom_std+"***");
+            document.write("***"+"GRACIAS POR SU COMPRA"+"***");
+            document.write("***********************");
+        </script>
+        <body>
+            
+        </body>
+    </center>
+</body>
+</html>
