@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGO SALARIO</title>
+    <link rel="stylesheet" href="CSS/Estilo 01.css">
+</head>
+<body>
+    <h1>Uso de Condisionarse SI</h1>
+    <h2>Pago Salario Empleado</h2>
+    <br>
+    <p>Script Para Pgo de Dias Laborales, si trabaja Mas de Quince Obtiene $50.000, de lo contrario nada, Calcular Salario del Empleado</p>
+    <script>
+
+        //Entrada De Variables
+        let dias,vdia,subtotal,bonificacion, total;
+        bonificacion=50000;
+        dias=parseInt(prompt("Ingrese Cantidad de Dias Trabajado..."))
+        vdia=parseInt(prompt("Ingrese el Valor de un Dia..."))
+        //Proceso
+        subtotal=dias*vdia; //fx para mostrar pago sin bono
+        if (dias>15){
+            total=subtotal+bonificacion;
+            document.write("<table><caption><RELACION DE PAGOS></caption><tr><th>DIAS TRABAJADOS</th></td>",dias,"</td></tr><tr><th>VALOR DIA $</th></td>",vdia,"</td></tr><tr><thBONIFICACION $</th<td>>",bonificacion,"</td></tr><tr><tr><th>VALOR A PAGAR  $</th><td>",total,"</td></tr></table>")
+        }else{
+            bonificacion=0;
+            total=subtotal+bonificacion;
+            document.write("<table><caption><RELACION DE PAGOS></caption><tr><th>DIAS TRABAJADOS</th></td>",dias,"</td></tr><tr><th>VALOR DIA $</th></td>",vdia,"</td></tr><tr><thBONIFICACION $</th<td>>",bonificacion,"</td></tr><tr><tr><th>VALOR A PAGAR  $</th><td>",total,"</td></tr></table>")
+        }
+    </script>
+</body>
+</html>

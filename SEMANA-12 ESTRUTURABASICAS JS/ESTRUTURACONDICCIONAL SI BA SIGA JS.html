@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasaje TM</title>
+    <!-- link de sitio sweetalert mensajes más elegantes-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    
+    <center>
+
+        <img src="./img/054d179c-d5a1-43b7-9829-ae70a9096cf5.jpg" alt="" width="150" height="150">
+        <h2>INGRESE SALDDO DE TARJETA TRANSMILENIO</h2>
+        <br>
+        <script>
+
+            let saldo;
+            const tm=2950;
+            //ENTRADA
+            saldo=parseInt(prompt("Ingrese Saldo de su Tarjeta TM"))
+            //PROCESO VALIDACION PASAJE TM
+            if (saldo>=tm){
+                swal("Estimado Usuario","Ingrese a Transmilenio","success");
+            }else{
+                swal("Estimado Usuario","Saldo Insuficiente...RECARGE LA TARJETA","error");
+            }
+
+        </script>
+
+    </center>
+</body>
+</html>
+[0:43 p. m., 24/10/2023] Victor: <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero Electronico</title>
+    <!-- link de sitio sweetalert mensajes más elegantes-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <style>
+        h1,h2,p{
+            font-size: 26px;
+            color: darkorchid;
+
+        }
+    </style>
+</head>
+<body>
+    <center>
+
+        <img src="./img/cdff9411-8dc7-438c-a71e-37e68e70e5e9.jpeg" alt="" width="150" height="150">
+
+        <h1>BANCO NUBANK</h1>
+        <h2>RETIRO DE DINERO DE CAJERO ELECTRONICO</h2>
+        <p>Bienvenido señor usuario a nuestro banco Nubank</p>
+        <br>
+        <script>
+            let sw=0; //var switche o bandera =0 apagado
+
+            //ENTRADA
+            let cuenta=parseInt(prompt("Ingrese su Numero de Cuenta..."));
+            let saldo=parseInt(prompt("Ingrese Saldo $$$ a Consignar en Cuenta..."));
+            let valor=parseInt(prompt("Ingrese Valor Dinero a Retirar..."));
+
+            //Proceso Validacion Retiro Dinero
+
+            if(valor>saldo){
+                swal("Estimado Usuario","!!FONDOS INSUFICIENTES!!","error")
+            }else{
+                sw=1; //Cambia valor switche a 1 prendido
+                var saldof;
+                saldof=saldo-valor;
+                swal("Estimado Usuario","!!RETIRE SU DINERO!!","success")
+            }
+
+            // validar tirilla de comprobante de retiro
+            if (sw==0){
+                document.write("<font color='red'>"+"SALDO DISPONIBLE $"+saldo+"</font>"+"<br>");
+            }else{document.write("<font color='blue'>"+"DINERO RETIRADO $"+valor+"</font>"+"<br>");
+            document.write("<font color='blue'>"+"SALDO DISPONIBLE $"+saldof+"</font>"+"<br>");
+
+            }
+
+        </script>
+    </center>
+</body>
+</html>
