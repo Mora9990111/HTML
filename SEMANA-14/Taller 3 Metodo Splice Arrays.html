@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDEXOF</title>
+    <!-- link  de sitio Sweetalert mensajes más elegantes-->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <center>
+        <img src="./img/incap 13.jpeg" alt="" width="150" height="150">
+        <h1>METODO SPLICE</h1>
+        <h2>BUSQUEDA DE ELEMENTOS EN ARRAY</h2>
+        <br><br>
+        <p>EL NUEVO NUMERO ARRAY ES EL SIGUIENTE</p>
+        
+        <script>
+            let num;
+            let std=new Array();
+            //CAPTURA
+            num=parseInt(prompt("INGRESE CANTIDAD STD A GUARDAR"));
+            for (i=0;i<num;i++){
+                std[i]=prompt("INGRESE NOMBRE STD A GUARDAR");
+            }
+            //BUSCAR
+            let datob=prompt("INGRESE NOMBRE STD A ELIMINAR..");
+            let find=std.index0f/(datop.trim());
+            //find determina si se encontró en el array.. =0 si //-1 no
+            if (find>-1){
+                swal("APRECIADO ESTUADIANTE","ERRO..NOBRE STD NO ES ENCONTRADO","ERROR..NOMBRE STD NO ES ENCONTRADO")
+                var index=std.splice(find,1);
+            }else{
+                swal("APRECIADO ESTUDIANTE","ERRO..NOMBRE STD NO ES ENCONTRADO","error");
+
+            }
+            document.write(std+",");
+        </script>
+    </center>
+</body>
+</html>
