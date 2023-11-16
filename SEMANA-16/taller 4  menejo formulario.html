@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="stylesheet" content="width=device-width, initial-scale=1.0">
+    <title>Formularios </title>
+    <link rel="stylesheet" href="./css/estilo01.css">
+    </head>
+<body>
+    <!--Programa que capture nombre,curso,tres notas, calcule la definitiva y clasifique en    entre 1.0 y 2.5 REPROBADO entre 2.6 y 3.5 HABILITAR entre 3.6 y 4.0 ACEPTABLE entre 4.1 y 5.0 EXCELENTE-->
+    <h1>MATERIA PROGRAMACION JAVASCRIPT</h1>
+    <form>
+
+        <table>
+
+        <caption>REPORTE DE NOTAS</caption>
+        <tr><th>NOMBRE</th><td><input type="text" id="n"></td></tr>
+        <tr><th>CURSO</th><td><input type="text" id="cur"></td></tr>
+        <tr><th>No.01</th><td><input type="text" id="not1"></td></tr>
+        <tr><th>No.02</th><td><input type="text" id="not2"></td></tr>
+        <tr><th>No.03</th><td><input type="text" id="not3"></td></tr>
+        <tr><th><div align='center'><input type="button" value="CALCULAR" onclick="calcular()"></div></th>
+            <th><div align='center'><input type="reset" id="boton1" value="BORRAR"></div></th></tr>
+            <tr><th>CLASIFICACION</th><td><input type="text" id="c"></td></tr>
+            <tr><th>CLASIFICACION</th><td><input type="text" id="d"></td></tr>
+        <tr><th>DEFINITIVA</th><td><input type="text" id="d"></td></tr>
+        </table>
+    </form>
+
+</body>
+</html>
